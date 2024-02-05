@@ -34,16 +34,3 @@ function playRound(playerSelection, computerSelection) {
         console.log("It's a tie! We both picked scissors!")
     }
 }
-
-function game() {
-    playRound(prompt('Rock, paper, or scissors?'), getComputerChoice())
-    playRound(prompt('Rock, paper, or scissors?'), getComputerChoice())
-    playRound(prompt('Rock, paper, or scissors?'), getComputerChoice())
-    playRound(prompt('Rock, paper, or scissors?'), getComputerChoice())
-    playRound(prompt('Rock, paper, or scissors?'), getComputerChoice())
-    if (wins > losses) {
-        console.log('You win the game! You won ' + wins + ' rounds and lost ' + losses + ' rounds.')
-    } else {
-        console.log('You lose! You won ' + wins + ' rounds ' + ' and lost ' + losses + ' rounds.')
-    }
-}
