@@ -6,31 +6,32 @@ function getComputerChoice() {
 
 let wins = 0;
 let losses = 0;
+let resultsDiv = document.querySelector('#results');
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'paper') {
-        console.log("You lose! Paper beats rock!");
+        resultsDiv.textContent = "You lose this round! Paper beats rock!";
         losses++;
     } else if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'scissors') {
-        console.log("You win! Rock beats scissors!");
+        resultsDiv.textContent = "You win! Rock beats scissors!";
         wins++;
     } else if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'rock') {
-        console.log("It's a tie! We both picked rock!");
+        resultsDiv.textContent = "It's a tie! We both picked rock!";
     } else if (playerSelection.toLowerCase() == 'paper' && computerSelection == 'rock') {
-        console.log("You win! Paper beats rock!");
+        resultsDiv.textContent = "You win! Paper beats rock!";
         wins++;
     } else if (playerSelection.toLowerCase() == 'paper' && computerSelection == 'scissors') {
-        console.log("You lose! Scissors beats paper!");
+        resultsDiv.textContent = "You lose! Scissors beats paper!";
         losses++;
     } else if (playerSelection.toLowerCase() == 'paper' && computerSelection == 'paper') {
-        console.log("It's a tie! We both picked paper!");
+        resultsDiv.textContent = "It's a tie! We both picked paper!";
     } else if (playerSelection.toLowerCase() == 'scissors' && computerSelection == 'rock') {
-        console.log("You lose! Rock beats scissors!");
+        resultsDiv.textContent = "You lose! Rock beats scissors!";
         losses++;
     } else if (playerSelection.toLowerCase() == 'scissors' && computerSelection == 'paper') {
-        console.log("You win! Scissors beats paper!");
+        resultsDiv.textContent = "You win! Scissors beats paper!";
         wins++;
     } else if (playerSelection.toLowerCase() == 'scissors' && computerSelection == 'scissors') {
-        console.log("It's a tie! We both picked scissors!")
+        resultsDiv.textContent = "It's a tie! We both picked scissors!";
     }
 }
