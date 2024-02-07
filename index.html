@@ -7,17 +7,20 @@
 </head>
 <body>
     <div id="scoreStuff">
-        <div id="playerScore"></div>
-        <div id="computerScore"></div>
+        <div id="playerScore">Player: 0</div>
+        <div id="computerScore">Computer: 0</div>
     </div>
 
-    <div id="results"></div>
+    <div id="results">Round: </div>
 
     <div id="buttons">
         <button id="rock" onclick="playRound('rock', getComputerChoice())">Rock</button>
         <button id="paper" onclick="playRound('paper', getComputerChoice())">Paper</button>
         <button id="scissors" onclick="playRound('scissors', getComputerChoice())">Scissors</button>
     </div>
+
+    <div id="finalScore">Winner: </div>
 </body>
 <script src="rpsmain.js"></script>
+<link rel="stylesheet" href="style.css">
 </html>
